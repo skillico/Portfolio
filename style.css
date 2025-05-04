@@ -183,6 +183,12 @@ p {
     main {
         gap: 20px;
     }
+    .page-padding {
+        padding: 0 16px 0 16px;
+    }
+    nav {
+        padding: 20px 16px 20px 16px;
+    }
 }
 
 .about {
