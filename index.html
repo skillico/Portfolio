@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skillico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <div class="nav-wrapper">
+    <nav>
+        <h2>skillico</h2>
+        <button>Contact</button>
+    </nav>
+    <div class="nav-border"></div>
+    <script>
+        window.addEventListener('scroll', () => {
+          const navBorder = document.querySelector('.nav-border');
+          const scrollPosition = window.scrollY;
+          const scrollThreshold = 10;
+    
+          if (scrollPosition > scrollThreshold) {
+            navBorder.classList.add('show-border');
+          } else {
+            navBorder.classList.remove('show-border');
+          }
+        });
+      </script>
+</div>
+    <main class="container">
+
+        <section id="hero">
+
+            <div class="page-padding">
+                <div class="hero-text"><h1>DESIGN FOR</h1><h1 class="blue-text">HUMAN USE</h1></div>
+                <div class="radius">
+                    <div class="video-container">
+                        <video src="PB final 2.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop></video>
+                      </div>
+                    <p>Progressive blur exploration</p>
+                    </div>
+            </div>
+
+        </section>
+
+        <section id="work">
+
+            <div class="page-padding">
+                <div class="radius">
+                    <img src="flex.png" alt="iPhone displaying the jobs page within Flex"></img>
+                <a class="blue-text" href="https://drive.google.com/file/d/1GWp5JRpaz4kZzN_hNtLhypedQj8paplO/view">View case study</a>
+                    </div>
+            </div>
+
+        </section>
+
+        <section id="about">
+
+            <div class="page-padding">
+                <div class="about">
+                <div class="about-text">
+                <h3>About</h3>
+                <p>Hi, I'm Michael Skillicorn. I have always had a profound love for creativity, and throughout the years expressed myself through film, photography and design.</p>
+                <p>Working as a UI/UX Designer and Design System Builder at ExorLive creating web and mobile products to inspire people to move.</p>
+                </div>
+                    <div class="avatar"><img src="avatar.png" alt="Avatar of Michael Skillicorn"></img></div>
+            
+
+        </section>
+
+    </main>
+</body>
+
+</html>
