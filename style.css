@@ -106,6 +106,9 @@ h1 {
     h1 {
         font-size: 3rem;
     }
+    .hero-text {
+        margin: 120px 0;
+    }
 }
 
 .blue-text {
