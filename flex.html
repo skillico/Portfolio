@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skillico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="avatar.png" type="image/png">
+</head>
+    <div class="nav-wrapper">
+    <nav>
+        <a href="index.html">
+            <h2>skillico</h2>
+        </a>
+        <a href="mailto:skillicorn.work@hotmail.com" class="contact-button">Contact</a>
+    </nav>
+    <div class="nav-border"></div>
+    <script>
+        window.addEventListener('scroll', () => {
+          const navBorder = document.querySelector('.nav-border');
+          const scrollPosition = window.scrollY;
+          const scrollThreshold = 10;
+    
+          if (scrollPosition > scrollThreshold) {
+            navBorder.classList.add('show-border');
+          } else {
+            navBorder.classList.remove('show-border');
+          }
+        });
+      </script>
+</div>
+    <main class="container">
+        <section id="hero">
+
+            <div class="page-padding">
+                <div class="hero-text"><h1>FLEX</h1><h1 class="blue-text">CASE STUDY</h1></div>
+                <div class="radius">
+                    <div class="video-container">
+                        <img src="flex.png" alt="iPhone displaying the jobs page within Flex">
+                      </div>
+                      <p>10 Weeks September-November 2023</p>
+                    </div>
+            </div>
+
+        </section>
+
+        <section id="intro">
+            <div class="page-padding">
+                <div class="radius">
+                    <div class="text-container">
+                        <h3>Intro</h3>
+                        <p>Flex is a recruitment app, connecting students and employers. Starting off we thought we were only creating an app for students in need of part-time work, but through research we quickly realised we are also creating another option for students stuck in part-time jobs that don't fit their changing schedule</p>
+                        <p> Role: Product Designer, Project Manager and Researcher</p>
+                        <p> Tools: Figma, Mockup, Miro, Figjam and Zoom</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="design-thinking">
+
+            <div class="page-padding">
+                <div class="radius">
+                    <div class="video-container">
+                        <img src="flex.png" alt="iPhone displaying the jobs page within Flex">
+                      </div>
+                      <p>10 Weeks September-November 2023</p>
+                    </div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
