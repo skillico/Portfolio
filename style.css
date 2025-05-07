@@ -199,7 +199,6 @@ h3 {
     .about {
         flex-direction: column;
         gap: 40px;
-        padding: 20px;
     }
 }
 
@@ -212,10 +211,7 @@ h3 {
         margin: 120px 0;
     }
 
-    .radius,
-    .about {
-        padding: 20px;
-    }
+    
 
     .content-container-center {
         gap: 20px;
