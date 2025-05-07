@@ -191,9 +191,13 @@ h3 {
 }
 
 .scrollable-image-container {
+    display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     min-width: 100%;
+    align-items: flex-start;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .scrollable-image-container img {
