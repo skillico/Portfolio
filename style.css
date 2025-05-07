@@ -195,9 +195,18 @@ h3 {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     width: 100%;
+    align-items: center;
+    justify-content: flex-start;
     scroll-snap-align: start;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+}
+
+.scrollable-image-container img {
+    min-width: fit-content;
+    width: auto;
+    height: auto;
+    display: block;
 }
 
 @media only screen and (max-width: 1024px) {
