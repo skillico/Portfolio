@@ -189,6 +189,15 @@ h3 {
     gap: 20px;
 }
 
+.scrollable-image-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrollable-image-container img {
+    min-width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
     h1 {
         font-size: 4rem;
@@ -245,5 +254,10 @@ h3 {
 
     nav {
         padding: 20px 16px;
+    }
+    .scrollable-image-container img {
+        min-width: fit-content; 
+        width: auto;
+        height: 300px;
     }
 }
