@@ -16,10 +16,11 @@ body {
 }
 
 .page-padding {
-    padding: 0 56px 0 56px;
+    padding: 0 40px;
 }
 
-.radius {
+.radius,
+.about {
     border-radius: 30px;
     overflow: hidden;
     background-color: #fefefe;
@@ -27,11 +28,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-
 }
 
-.container {
+.radius {
+    flex-direction: column;
+}
+
+.about {
+    flex-direction: row;
+    gap: 120px;
+}
+
+.container,
+nav {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -40,9 +49,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 20px 56px 20px 56px;
-    max-width: 1200px;
+    flex-direction: row;
+    padding: 20px 40px;
 }
 
 main {
@@ -53,10 +61,15 @@ main {
     padding-bottom: 120px;
 }
 
-.video-container {
+.video-container,
+.img-container-1x1 {
     aspect-ratio: 1/1;
     overflow: hidden;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .video-container video {
@@ -69,22 +82,8 @@ main {
 img {
     display: block;
     max-width: 100%;
-    aspect-ratio: 1 / 1;
     object-fit: contain;
-
 }
-
-.flex-text {
-    padding: 40px 40px 40px 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-    gap: 20px;
-}
-
-
-
 
 h1 {
     font-size: 6rem;
@@ -96,19 +95,30 @@ h1 {
     margin: 200px 0;
 }
 
-@media only screen and (max-width: 1024px) {
-    h1 {
-        font-size: 4rem;
-    }
+.text-container {
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    max-width: 700px;
+}
+.text-center {
+    gap: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
 }
 
-@media only screen and (max-width: 767px) {
-    h1 {
-        font-size: 3rem;
-    }
-    .hero-text {
-        margin: 120px 0;
-    }
+.content-container-center {
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
 }
 
 .blue-text {
@@ -131,7 +141,6 @@ h1 {
 }
 
 .nav-wrapper {
-
     position: fixed;
     top: 0;
     left: 0;
@@ -149,72 +158,21 @@ h1 {
     background-color: #33333320;
 }
 
-
 a {
     text-decoration: none;
     color: #333;
     line-height: 1.5;
     font-size: 1rem;
 }
+
 a.blue-text:hover {
     text-decoration: underline;
 }
-
 
 p {
     font-size: 1rem;
     line-height: 1.5;
     color: #555;
-}
-
-@media only screen and (max-width: 767px) {
-    p {
-        font-size: 0.875rem;
-    }
-
-    a {
-        font-size: 0.875rem;
-    }
-    main {
-        gap: 20px;
-    }
-    .page-padding {
-        padding: 0 16px 0 16px;
-    }
-    nav {
-        padding: 20px 16px 20px 16px;
-    }
-}
-
-.about {
-    border-radius: 30px;
-    overflow: hidden;
-    background-color: #fefefe;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 40px;
-}
-
-@media only screen and (max-width: 900px) {
-    .about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-    }
-}
-
-.about-text {
-    gap: 8px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1;
-    max-width: 600px;
 }
 
 .avatar {
@@ -223,4 +181,73 @@ p {
 
 h3 {
     line-height: 1.5;
+}
+
+.images-side-by-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        margin: 120px 0;
+    }
+
+    .radius,
+    .about {
+        padding: 20px;
+    }
+
+    .content-container-center {
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+        max-width: 700px;
+    }
+    
+    .text-container {
+        gap: 8px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+        max-width: 700px;
+    }
+    p,
+    a {
+        font-size: 0.875rem;
+    }
+
+    main {
+        gap: 20px;
+    }
+
+    .page-padding {
+        padding: 0 16px;
+    }
+
+    nav {
+        padding: 20px 16px;
+    }
 }
