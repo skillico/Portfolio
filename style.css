@@ -191,6 +191,8 @@ h3 {
 }
 
 .scrollable-image-container {
+    display: block;
+    width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: inline mandatory;
