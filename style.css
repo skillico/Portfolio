@@ -194,14 +194,15 @@ h3 {
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    min-width: 100%;
-    align-items: flex-start;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 
 .scrollable-image-container img {
-    min-width: 100%;
+    min-width: fit-content;
     width: auto;
     height: auto;
     display: block;
