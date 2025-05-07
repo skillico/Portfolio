@@ -191,13 +191,20 @@ h3 {
 }
 
 .scrollable-image-container {
-    display: flex;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollable-image-container img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: auto;
+  min-height: 300px;
 }
 
 @media only screen and (max-width: 1024px) {
