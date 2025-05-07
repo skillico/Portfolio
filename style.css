@@ -83,6 +83,7 @@ img {
     display: block;
     max-width: 100%;
     object-fit: contain;
+    min-height: 300px;
 }
 
 h1 {
@@ -192,10 +193,12 @@ h3 {
 .scrollable-image-container {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    min-width: 100%;
 }
 
 .scrollable-image-container img {
-    min-width: 100%;
+    display: block
+    width: auto;
 }
 
 @media only screen and (max-width: 1024px) {
