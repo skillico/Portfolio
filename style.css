@@ -193,6 +193,7 @@ h3 {
 .scrollable-image-container {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    width: 100vw;
 }
 
 .scrollable-image-container img {
