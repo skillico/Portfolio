@@ -191,8 +191,10 @@ h3 {
 }
 
 .scrollable-image-container {
+    display:block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    align-items:stretch;
 }
 
 .scrollable-image-container img {
