@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>skillico</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="avatar.png" type="image/png">
+    </head>
+    <body>
+
+        <div class="nav-wrapper">
+            <nav>
+                <a href="/">
+                    <img src="avatar.png" alt="Michael Skillicorn" class="nav-avatar">
+                </a>
+                <a href="mailto:hi@skilli.co" class="contact-button">Contact</a>
+            </nav>
+            <div class="nav-border"></div>
+            <script>
+                window.addEventListener('scroll', () => {
+                    const navBorder = document.querySelector('.nav-border');
+                    const scrollPosition = window.scrollY;
+                    const scrollThreshold = 10;
+        
+                    if (scrollPosition > scrollThreshold) {
+                        navBorder.classList.add('show-border');
+                    } else {
+                        navBorder.classList.remove('show-border');
+                    }
+                });
+            </script>
+        </div>
+
+        <main class="container">
+
+            <section id="about">
+                <div class="page-padding">
+                    <div class="text-container">
+                        <div class="text">
+                            <h3>Explorations</h3>
+                            <p>Collection of creative exercises</p>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+            <section id="work">
+
+                <div class="page-padding">
+                    
+    
+                        <div class="radius">
+                            <div class="video-container">
+                                <video src="TrashCanAnimation.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop preload="auto" playsinline></video>
+                              </div>
+                              <div class="card-text">
+                                <p>SwiftUI</p>
+                            </div>
+                            </div>
+    
+                        <div class="radius">
+                            <div class="video-container">
+                                <video src="PB final 2.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop preload="auto" playsinline poster="Blur.png"></video>
+                              </div> 
+                              <div class="card-text">
+                                <p>Figma</p>
+                            </div>
+                            </div>
+                    
+                </div>
+    
+            </section>
+
+        </main>
+
+    </body>
+</html>
