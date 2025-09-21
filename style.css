@@ -11,38 +11,61 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     -webkit-overflow-scrolling: touch;
 }
 
 .page-padding {
     padding: 0 40px;
-}
-
-.radius,
-.about {
-    border-radius: 30px;
-    overflow: hidden;
-    background-color: #fefefe;
-    padding: 40px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
 }
 
 .radius {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #00000010;
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.about {
-    flex-direction: row;
-    gap: 120px;
+.card-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #00000010;
+    padding: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0 40px 0;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .container,
 nav {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+    align-items: flex-start;
 }
 
 nav {
@@ -56,9 +79,26 @@ nav {
 main {
     display: grid;
     grid-template-rows: auto;
-    gap: 40px;
-    padding-top: 78.5px;
+    gap: 20px;
+    padding-top: 120px;
     padding-bottom: 120px;
+    align-items: center;
+}
+
+
+
+
+
+.work-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work-container .radius {
+    flex: 1;
+    min-width: 300px;
 }
 
 .video-container,
@@ -75,43 +115,45 @@ main {
 .video-container video {
     display: block;
     width: 100%;
-    height: auto;
-    transform: translateY(-10px);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: #fff;
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
 }
 
-img {
+.video-container video[src*="PB final 2.mp4"] {
+    clip-path: inset(4% 0 0% 0);
+}
+
+
+.content-image {
     display: block;
     max-width: 100%;
     object-fit: contain;
     min-height: 300px;
 }
 
+.nav-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    align-self: center;
+}
+
 h1 {
     font-size: 6rem;
     font-weight: 1000;
-    text-align: center;
+    line-height: 1.0;
 }
 
-.hero-text {
-    margin: 200px 0;
-}
 
-.text-container {
-    gap: 8px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1;
-    max-width: 700px;
-}
-.text-center {
-    gap: 8px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1;
-}
+
+
 
 .content-container-center {
     gap: 40px;
@@ -127,18 +169,18 @@ h1 {
 }
 
 .contact-button {
-    background-color: #333;
-    color: white;
-    border: none;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #00000010;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: regular;
 }
 
 .contact-button:hover {
-    background-color: #3a3a3a;
+    background-color: #00000005;
 }
 
 .nav-wrapper {
@@ -146,9 +188,11 @@ h1 {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     z-index: 100;
 }
+
+
 
 .nav-border {
     height: 1px;
@@ -156,8 +200,10 @@ h1 {
 }
 
 .nav-border.show-border {
-    background-color: #33333320;
+    background-color: #00000010;
 }
+
+
 
 a {
     text-decoration: none;
@@ -176,13 +222,17 @@ p {
     color: #555;
 }
 
-.avatar {
-    width: 200px;
-}
 
 h3 {
+    font-weight: normal;
     line-height: 1.5;
 }
+
+
+
+
+
+
 
 .images-side-by-side {
     display: flex;
@@ -271,3 +321,4 @@ h3 {
     min-height: 300px;
   }
 }
+
