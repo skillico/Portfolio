@@ -53,14 +53,14 @@
                 <div class="work-container">
                     <a href="/kap.html" class="radius">
                         <div class="video-container">
-                            <video id="flickerFix" src="Kap.mp4" alt="Kap recording bar showing main view and advanced view" autoplay muted loop preload="auto" playsinline></video>
+                            <video src="Kap.mp4" alt="Kap recording bar showing main view and advanced view" autoplay muted loop preload="auto" playsinline></video>
                         </div>
                         <div class="card-text"><p class="blue-text">Kap</p></div>
                     </a>
 
                     <a href="/explorations.html" class="radius">
                         <div class="video-container">
-                            <video id="flickerFix" src="PB final 2.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop preload="auto" playsinline></video>
+                            <video src="PB final 2.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop preload="auto" playsinline></video>
                         </div>
                         <div class="card-text"><p class="blue-text">Explorations</p></div>
                     </a>
@@ -75,17 +75,6 @@
         </section>
 
     </main>
-
-    <script>
-        const vid = document.getElementById("flickerFix");
-      
-        vid.addEventListener("timeupdate", () => {
-          if (vid.currentTime >= vid.duration - 0.05) {
-            vid.currentTime = 0;
-            vid.play();
-          }
-        });
-      </script>
 
 </body>
 
