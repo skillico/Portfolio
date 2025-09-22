@@ -52,7 +52,7 @@
     
                         <div class="radius">
                             <div class="video-container">
-                                <video id="flickerFix" src="TrashCanAnimation.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop preload="auto" playsinline></video>
+                                <video src="TrashCanAnimation.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop preload="auto" playsinline></video>
                               </div>
                               <div class="card-text">
                                 <p>SwiftUI</p>
@@ -61,7 +61,7 @@
     
                         <div class="radius">
                             <div class="video-container">
-                                <video id="flickerFix" src="PB final 2.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop preload="auto" playsinline poster="Blur.png"></video>
+                                <video src="PB final 2.mp4" alt="Animation of a banking app, showcasing the use of progressive blur" autoplay muted loop preload="auto" playsinline poster="Blur.png"></video>
                               </div> 
                               <div class="card-text">
                                 <p>Figma</p>
@@ -73,17 +73,6 @@
             </section>
 
         </main>
-
-        <script>
-            const vid = document.getElementById("flickerFix");
-          
-            vid.addEventListener("timeupdate", () => {
-              if (vid.currentTime >= vid.duration - 0.05) {
-                vid.currentTime = 0;
-                vid.play();
-              }
-            });
-          </script>
 
     </body>
 </html>
