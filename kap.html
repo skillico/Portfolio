@@ -52,7 +52,7 @@
     
                         <div class="radius">
                             <div class="video-container">
-                                <video src="Kap.mp4" alt="Main kap design" autoplay muted loop preload="auto" playsinline></video>
+                                <video id="flickerFix" src="Kap.mp4" alt="Main kap design" autoplay muted loop preload="auto" playsinline></video>
                               </div>
                               <div class="card-text">
                                 <p>Kap</p>
@@ -61,7 +61,7 @@
 
                             <div class="radius">
                                 <div class="video-container">
-                                    <video src="shortcut.mp4" alt="Liquid glass keys merging to create shortcut" autoplay muted loop preload="auto" playsinline></video>
+                                    <video id="flickerFix" src="shortcut.mp4" alt="Liquid glass keys merging to create shortcut" autoplay muted loop preload="auto" playsinline></video>
                                   </div>
                                   <div class="card-text">
                                     <p>Shortcut</p>
@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="radius">
                                     <div class="video-container">
-                                        <video src="kapPreferences19sep.mp4" alt="Preferences window showcasing general and plugins" autoplay muted loop preload="auto" playsinline></video>
+                                        <video id="flickerFix" src="kapPreferences19sep.mp4" alt="Preferences window showcasing general and plugins" autoplay muted loop preload="auto" playsinline></video>
                                       </div>
                                       <div class="card-text">
                                         <p>Preferences</p>
@@ -82,6 +82,17 @@
             </section>
 
         </main>
+
+        <script>
+            const vid = document.getElementById("flickerFix");
+          
+            vid.addEventListener("timeupdate", () => {
+              if (vid.currentTime >= vid.duration - 0.05) {
+                vid.currentTime = 0;
+                vid.play();
+              }
+            });
+          </script>
 
     </body>
 </html>
